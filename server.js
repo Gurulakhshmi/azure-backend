@@ -27,7 +27,7 @@ app.post("/upload", async (req, res) => {
 
         res.send("File uploaded successfully!");
     } catch (err) {
-        res.status(500).send("Upload failed");
+        res.status(500).send(err);
     }
 });
 
