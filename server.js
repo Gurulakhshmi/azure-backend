@@ -2,6 +2,7 @@ const express = require("express");
 const { BlobServiceClient } = require("@azure/storage-blob");
 
 const app = express();
+app.use(express.static(__dirname));
 app.use(express.json());
 
 const PORT = process.env.PORT || 3000;
